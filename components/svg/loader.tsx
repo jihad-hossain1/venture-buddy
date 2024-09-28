@@ -1,5 +1,6 @@
 import * as React from "react";
-const Loader = (props: any) => (
+
+const Loader: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg
     id="Capa_1"
     xmlns="http://www.w3.org/2000/svg"
@@ -9,9 +10,7 @@ const Loader = (props: any) => (
     width="26.349px"
     height="26.35px"
     viewBox="0 0 26.349 26.35"
-    style={{
-      enableBackground: "new 0 0 26.349 26.35",
-    }}
+    enableBackground="new 0 0 26.349 26.35" // Apply directly as an SVG attribute
     xmlSpace="preserve"
     {...props}
   >
@@ -29,4 +28,5 @@ const Loader = (props: any) => (
     </g>
   </svg>
 );
+
 export default Loader;
