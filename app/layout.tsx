@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "@/components/shared/header/header";
+import Footer from "@/components/shared/footer/footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -30,10 +32,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Venture Buddy - Innovative IT Solutions",
     description: "Partner with Venture Buddy for cutting-edge IT solutions and technology services that empower your business.",
-    url: "https://venturebuddy.vercel.app",
+    url: "https://venture-buddy.vercel.app",
     images: [
       {
-        url: "https://venturebuddy.vercel.app/og-image-it.jpg",
+        url: "https://venture-buddy.vercel.app/og-image-it.jpg",
         width: 1200,
         height: 630,
         alt: "Venture Buddy - Innovative IT Solutions",
@@ -46,7 +48,7 @@ export const metadata: Metadata = {
     description: "Providing tailored IT solutions and technology consulting to help businesses achieve their goals.",
     images: [
       {
-        url: "https://venturebuddy.vercel.app/twitter-image-it.jpg",
+        url: "https://venture-buddy.vercel.app/twitter-image-it.jpg",
         alt: "Venture Buddy - IT Solutions for Business",
       },
     ],
@@ -64,7 +66,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <main className="bg-primary_light text-primary_dark_deep">
+           
+            <Header />
+            <div className=" min-h-screen w-11/12 m-auto p-4 ">{children}</div>
+            <Footer />
+          </main>
       </body>
     </html>
   );
