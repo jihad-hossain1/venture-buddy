@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import SVg from "@/components/svg/svg";
 import ThreeLine from "@/components/svg/threeLine";
 import CloseIcon from "@/components/svg/close";
+import RightArrow from "@/components/svg/arrow";
 
 const sidebarVariants = {
   open: {
@@ -40,11 +41,28 @@ const MobileSidebar = () => {
   const navItems = [
     {
       id: 1,
-      name: "Dashboard",
-      icon: <SVg className="w-6 h-6" />,
-      link: "/dashboard",
+      name: "Home",
+      icon: <RightArrow className="w-6 h-6" />,
+      link: "/",
     },
-    
+    {
+      id: 2,
+      name: "Services",
+      icon: <RightArrow className="w-6 h-6" />,
+      link: "/",
+    },
+    {
+      id: 3,
+      name: "About",
+      icon: <RightArrow className="w-6 h-6" />,
+      link: "/",
+    },
+    {
+      id: 4,
+      name: "Contact",
+      icon: <RightArrow className="w-6 h-6" />,
+      link: "/",
+    },
   ];
 
   // Close the sidebar when clicking outside of it
@@ -74,7 +92,7 @@ const MobileSidebar = () => {
         className=" bg-primary_light dark:bg-primary_dark w-full px-4 py-2 rounded-r-md shadow-md text-primary_light_5 dark:text-primary_light_3"
         aria-label="Open Sidebar"
       >
-        <ThreeLine className="w-6 h-6"/>
+        <ThreeLine className="w-6 h-6" />
       </button>
 
       {/* Sidebar Navigation */}
@@ -97,7 +115,10 @@ const MobileSidebar = () => {
                 <CloseIcon className="w-6 h-6" />
               </button>
             </div>
-            <motion.ul variants={sidebarVariants} className="flex flex-col gap-6">
+            <motion.ul
+              variants={sidebarVariants}
+              className="flex flex-col gap-6"
+            >
               {navItems.map((item) => (
                 <motion.li
                   variants={liVariants}

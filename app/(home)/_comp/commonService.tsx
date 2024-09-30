@@ -20,19 +20,19 @@ export default function CommonService() {
     {
       name: "Code Share",
       description: "Share code with other users",
-      url: "/service/code-share",
+      url: "https://multi-services.vercel.app/service/code-share",
       icon: <CodeSVG className="w-10 h-10 " stroke="#199255" />,
     },
     {
       name: "SVG to JSX",
       description: "Convert your SVG to JSX Component",
-      url: "/service/svg-jsx-convert",
+      url: "https://multi-services.vercel.app/service/svg-jsx-convert",
       icon: <CodeSVG className="w-10 h-10 " stroke="#f2c94c" />,
     },
     {
       name: "Image Compress",
       description: "Compress your images",
-      url: "/service/image-process",
+      url: "https://multi-services.vercel.app/service/image-process",
       icon: <MediaSVG className="w-10 h-10 " stroke="#f2c94c" />,
     },
   ];
