@@ -2,6 +2,18 @@ export const services = {
   "services": [
     
     {
+      "name": "Website Development",
+      "description": "Website development for small businesses and startups with secure payment integrations.",
+      "cost": "$300 - $40,000",
+      "features": [
+        "Custom website platform",
+        "Payment gateway integrations",
+        "Scalable shopping experiences"
+      ]
+    },
+   
+    
+    {
       "name": "E-commerce Development",
       "description": "Custom e-commerce platforms with secure payment integrations.",
       "cost": "$300 - $40,000",
