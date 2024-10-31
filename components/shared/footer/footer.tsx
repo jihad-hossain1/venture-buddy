@@ -28,10 +28,10 @@ const Footer: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex flex-col items-center"
+          className="flex flex-col md:items-center"
         >
           <h4 className="text-xl font-bold mb-4">Our IT Services</h4>
-          <ul className="flex gap-3 list-disc-none">
+          <ul className="flex gap-3 list-disc-none md:flex-row max-sm:flex-col">
             <li>Custom Software Development</li>
             <li>Cloud Solutions</li>
             <li>IT Consulting</li>
