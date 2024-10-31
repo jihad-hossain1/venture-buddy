@@ -9,7 +9,7 @@ const CustomServiceCard: React.FC = () => {
   return (
     <div className="flex flex-col items-center">
       <div className="bg-white shadow-xl rounded-lg p-6 w-full max-w-3xl transform transition-all hover:-translate-y-2 hover:shadow-2xl duration-300">
-        <h2 className="text-3xl font-bold text-primary_dark text-center mb-4">
+        <h2 className="text-3xl font-bold text-primary_dark text-center mb-4 max-sm:text-xl">
           {services?.custom_service.name}
         </h2>
 
@@ -19,7 +19,7 @@ const CustomServiceCard: React.FC = () => {
             <button
               key={index}
               onClick={() => setSelectedPlan(index)}
-              className={`py-2 px-4 font-semibold rounded-lg focus:outline-none transition-all ${
+              className={`py-2 px-4 font-semibold rounded-lg focus:outline-none transition-all max-sm:text-sm max-sm:text-nowrap max-sm:px-2 max-sm:py-1 ${
                 selectedPlan === index
                   ? "bg-primary_dark text-[#fff]"
                   : "bg-primary_light_2 text-primary_dark hover:bg-primary_light_2"

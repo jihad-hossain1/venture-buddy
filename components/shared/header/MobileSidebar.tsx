@@ -89,9 +89,9 @@ const MobileSidebar = () => {
       {/* Toggle Button */}
       <button
         onClick={() => setIsOpen(true)}
-        className=" bg-primary_light dark:bg-primary_dark w-full px-4 py-2 rounded-r-md shadow-md text-primary_light_5 dark:text-primary_light_3"
+        className=" bg-primary_light dark:bg-primary_dark w-full px-4 py-2  shadow-md text-primary_light_5 dark:text-primary_light_3"
         aria-label="Open Sidebar"
-      >
+      > 
         <ThreeLine className="w-6 h-6" />
       </button>
 

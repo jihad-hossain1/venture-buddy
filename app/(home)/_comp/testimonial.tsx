@@ -59,21 +59,21 @@ const TestimonialCarousel: React.FC = () => {
 
   return (
     <section className="py-10">
-      <div className="w-11/12 mx-auto px-4 relative">
+      <div className="mx-4 relative">
         <h2 className="text-3xl font-bold text-center mb-8">
           What Our Clients Say
         </h2>
 
-        <div className="relative overflow-hidden">
+        <div className=" relative overflow-hidden">
           <div
             ref={carouselRef}
-            className="flex transition-transform duration-500 ease-out gap-5 my-4"
+            className="flex transition-transform duration-500 ease-out gap-5 my-4 px-4"
             style={{ width: `${totalPages * 100}%` }}
           >
             {paginatedTestimonials.map((page, pageIndex) => (
               <div
                 key={pageIndex}
-                className="flex gap-5 w-full"
+                className="flex gap-5 w-full "
                 style={{ width: `${100 / totalPages}%` }}
               >
                 {page.map((testimonial, index) => (

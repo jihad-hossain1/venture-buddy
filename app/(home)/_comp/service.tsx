@@ -83,7 +83,7 @@ const ServiceCard: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-wrap justify-center gap-6 p-4">
+    <div className="flex flex-wrap justify-center gap-6">
       {services?.services?.map((service, index) => (
         <div
           key={index}
