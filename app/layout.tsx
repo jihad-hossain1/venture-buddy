@@ -69,7 +69,7 @@ export default function RootLayout({
         <main className="bg-primary_light text-primary_dark_deep">
            
             <Header />
-            <div className=" min-h-screen w-11/12 m-auto p-4 ">{children}</div>
+            <div className="min-h-screen">{children}</div>
             <Footer />
           </main>
       </body>

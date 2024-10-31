@@ -38,7 +38,7 @@ const LandingBanner: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative bg-primary_light_3 rounded-xl text-white py-16 md:py-24 lg:py-32">
+    <div className="md:w-11/12 md:mx-auto relative bg-primary_light_3 md:rounded-xl text-white py-16 md:py-24 lg:py-32">
       {/* Background Image (Optional) */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-90 rounded-xl bg-primary_light_3"

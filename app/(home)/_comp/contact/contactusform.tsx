@@ -52,9 +52,9 @@ const ContactUs: React.FC = () => {
   };
 
   return (
-    <section className="py-10">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8">Contact Us</h2>
+    <section className="">
+      <div className="">
+        {/* <h2 className="text-3xl font-bold text-center mb-8">Contact Us</h2> */}
         <form
           onSubmit={handleSubmit}
           className="max-w-lg mx-auto bg-white p-6 rounded shadow-md"
@@ -72,7 +72,7 @@ const ContactUs: React.FC = () => {
               className="w-full px-3 py-2 border border-gray-300 rounded"
             />
             {errors.name && (
-              <p className="text-red-500 text-sm">{errors.name}</p>
+              <p className="text-[red] text-sm">{errors.name}</p>
             )}
           </div>
           <div className="mb-4">
@@ -88,7 +88,7 @@ const ContactUs: React.FC = () => {
               className="w-full px-3 py-2 border border-gray-300 rounded"
             />
             {errors.email && (
-              <p className="text-red-500 text-sm">{errors.email}</p>
+              <p className="text-[red] text-sm">{errors.email}</p>
             )}
           </div>
           <div className="mb-4">
@@ -107,12 +107,12 @@ const ContactUs: React.FC = () => {
               className="w-full px-3 py-2 border border-gray-300 rounded"
             />
             {errors.message && (
-              <p className="text-red-500 text-sm">{errors.message}</p>
+              <p className="text-[red] text-sm">{errors.message}</p>
             )}
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600"
+            className="w-full bg-primary_dark_deep text-primary_light py-2 rounded hover:bg-blue-600"
           >
             Send Message
           </button>

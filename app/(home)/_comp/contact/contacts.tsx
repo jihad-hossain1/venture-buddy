@@ -43,7 +43,7 @@ const Contacts = () => {
                 isOpen={confirmModal}
                 onClose={closeModal}
                 title={modalTitle} // Dynamically set title
-                size="lg"
+                size="sm"
                 closeOnOverlayClick={true}
             >
                 {modalContent} {/* Dynamically set content */}

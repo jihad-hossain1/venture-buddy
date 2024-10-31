@@ -1,109 +1,34 @@
 export const services = {
   "services": [
+    
     {
-      "name": "Cloud Solutions & DevOps",
-      "description": "Cloud infrastructure setup, DevOps automation, and scalable cloud migrations.",
-      "cost": "$3000 - $50,000",
+      "name": "Website Development",
+      "description": "Website development for small businesses and startups with secure payment integrations.",
+      "cost": "$300 - $40,000",
       "features": [
-        "Cloud setup (AWS, Azure, Google Cloud)",
-        "CI/CD pipeline setup",
-        "Cloud migration"
+        "Custom website platform",
+        "Payment gateway integrations",
+        "Scalable shopping experiences"
       ]
     },
-    {
-      "name": "Digital Transformation Consulting",
-      "description": "Strategic consulting to help businesses leverage cutting-edge technologies and automate processes.",
-      "cost": "$2000 - $25,000",
-      "features": [
-        "Business process automation",
-        "Technology modernization",
-        "Custom digital strategies"
-      ]
-    },
-    {
-      "name": "Mobile App Development",
-      "description": "Native and cross-platform mobile app development with a focus on performance and user experience.",
-      "cost": "$5000 - $70,000",
-      "features": [
-        "iOS and Android app development",
-        "React Native, Flutter apps",
-        "App lifecycle management"
-      ]
-    },
-    {
-      "name": "AI & Machine Learning Solutions",
-      "description": "Data-driven AI solutions and machine learning models tailored to your business.",
-      "cost": "$8000 - $60,000",
-      "features": [
-        "Predictive models",
-        "NLP and image recognition",
-        "Machine learning algorithm development"
-      ]
-    },
-    {
-      "name": "Blockchain Development",
-      "description": "Development of secure blockchain applications, smart contracts, and DApps.",
-      "cost": "$10,000 - $100,000",
-      "features": [
-        "Smart contract implementation",
-        "Blockchain app development",
-        "Tokenization"
-      ]
-    },
-    {
-      "name": "UI/UX Design",
-      "description": "User-centric design and optimization for web and mobile platforms.",
-      "cost": "$2000 - $30,000",
-      "features": [
-        "Wireframing and prototyping",
-        "Usability testing",
-        "Custom interface design"
-      ]
-    },
-    {
-      "name": "Cybersecurity Solutions",
-      "description": "Comprehensive security solutions to protect your data and systems.",
-      "cost": "$5000 - $50,000",
-      "features": [
-        "Security audits",
-        "Threat detection and response",
-        "Compliance consulting"
-      ]
-    },
+   
+    
     {
       "name": "E-commerce Development",
       "description": "Custom e-commerce platforms with secure payment integrations.",
-      "cost": "$3000 - $40,000",
+      "cost": "$300 - $40,000",
       "features": [
         "Custom e-commerce platform",
         "Payment gateway integrations",
         "Scalable shopping experiences"
       ]
     },
-    {
-      "name": "Data Analytics & Business Intelligence",
-      "description": "Advanced data visualization and predictive analytics to support decision-making.",
-      "cost": "$4000 - $30,000",
-      "features": [
-        "Data visualization",
-        "Predictive analytics",
-        "Data warehousing"
-      ]
-    },
-    {
-      "name": "IoT (Internet of Things) Solutions",
-      "description": "Smart device integration and connected systems for various industries.",
-      "cost": "$5000 - $70,000",
-      "features": [
-        "IoT platform development",
-        "Sensor data analysis",
-        "Automation and control systems"
-      ]
-    },
+   
+    
     {
       "name": "IT Support & Maintenance",
       "description": "24/7 monitoring, proactive maintenance, and IT support services.",
-      "cost": "$1000 - $15,000",
+      "cost": "$100 - $15,000",
       "features": [
         "24/7 monitoring",
         "System updates and troubleshooting",
@@ -117,7 +42,7 @@ export const services = {
         {
           "plan_name": "Basic Plan",
           "cost": {
-            "min": 5000,
+            "min": 500,
             "max": 15000
           },
           "description": "Standard web or mobile application with limited features and basic user interface.",
@@ -132,7 +57,7 @@ export const services = {
         {
           "plan_name": "Advanced Plan",
           "cost": {
-            "min": 15000,
+            "min": 1500,
             "max": 50000
           },
           "description": "Fully customized software tailored to business needs with multiple features and advanced integrations.",
@@ -146,7 +71,7 @@ export const services = {
         {
           "plan_name": "Enterprise Plan",
           "cost": {
-            "min": 50000,
+            "min": 5000,
             "max": 100000
           },
           "description": "Large-scale, highly scalable software with advanced security, integrations, and performance optimization.",
@@ -160,7 +85,7 @@ export const services = {
         }
       ],
       "dynamic_pricing": {
-        "base_rate": 5000,
+        "base_rate": 500,
         "complexity_multiplier": {
           "medium_complexity": 1.5,
           "high_complexity": 2
@@ -172,7 +97,7 @@ export const services = {
         "support_and_maintenance": {
           "description": "Annual support and maintenance fees.",
           "cost_range": {
-            "min": 1000,
+            "min": 100,
             "max": 5000
           }
         },

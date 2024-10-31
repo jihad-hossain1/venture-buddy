@@ -5,6 +5,29 @@
 import React from "react";
 
 import { motion } from "framer-motion";
+import { teamMembers } from "@/public/data/public";
+import { useRouter } from "next/navigation";
+
+
+const OurTeam: React.FC = () => {
+  const router = useRouter();
+  return (
+    <section className="py-10 my-10 relative">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {teamMembers?.slice(0, 4).map((member, index) => (
+          <TeamCard key={index} member={member} />
+        ))}
+      </div>
+       {
+        teamMembers?.length > 4 &&  <div className="absolute z-20 bottom-0 right-0">
+        <button onClick={() => router.push("/team")}>
+          Show More
+        </button>
+      </div>
+       }
+    </section>
+  );
+};
 
 interface TeamMember {
   name: string;
@@ -17,6 +40,7 @@ interface TeamCardProps {
 }
 
 const TeamCard: React.FC<TeamCardProps> = ({ member }) => {
+  
   return (
     <motion.div
       className="bg-white shadow-lg rounded-lg overflow-hidden"
@@ -33,41 +57,6 @@ const TeamCard: React.FC<TeamCardProps> = ({ member }) => {
         <p className="text-gray-600">{member.role}</p>
       </div>
     </motion.div>
-  );
-};
-
-const teamMembers = [
-  {
-    name: "John Doe",
-    role: "CEO",
-    image: "https://via.placeholder.com/400x300?text=John+Doe",
-  },
-  {
-    name: "Jane Smith",
-    role: "CTO",
-    image: "https://via.placeholder.com/400x300?text=Jane+Smith",
-  },
-  {
-    name: "Alice Johnson",
-    role: "Designer",
-    image: "https://via.placeholder.com/400x300?text=Alice+Johnson",
-  },
-  {
-    name: "Bob Brown",
-    role: "Developer",
-    image: "https://via.placeholder.com/400x300?text=Bob+Brown",
-  },
-];
-
-const OurTeam: React.FC = () => {
-  return (
-    <section className="py-10 my-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {teamMembers.map((member, index) => (
-          <TeamCard key={index} member={member} />
-        ))}
-      </div>
-    </section>
   );
 };
 
